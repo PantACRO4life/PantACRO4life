@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="24" viewBox="0 0 1000 24">
+  <style>.run { animation: run 3.5s linear infinite; } @keyframes run { from { transform: translateX(-200px); } to { transform: translateX(1200px); } }</style>
+  <defs>
+    <linearGradient id="fadeLine" x1="0" x2="1"><stop offset="0" stop-color="#e01b31" stop-opacity="0"/><stop offset=".5" stop-color="#e01b31"/><stop offset="1" stop-color="#e01b31" stop-opacity="0"/></linearGradient>
+    <linearGradient id="spark" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect x="0" y="11" width="1000" height="2" fill="url(#fadeLine)"/>
+  <rect x="0" y="11" width="160" height="2" fill="url(#spark)" class="run"/>
+  <g transform="translate(482 4)">
+    <line x1="0" y1="0" x2="8" y2="16" stroke="#ff2a3d" stroke-width="3" stroke-linecap="round"/>
+    <line x1="14" y1="0" x2="22" y2="16" stroke="#ff2a3d" stroke-width="3" stroke-linecap="round"/>
+    <line x1="28" y1="0" x2="36" y2="16" stroke="#ff2a3d" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
