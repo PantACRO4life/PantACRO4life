@@ -14,15 +14,15 @@
   <img src="https://komarev.com/ghpvc/?username=PantACRO4life&style=for-the-badge&color=f59e0b&label=VISITORS"/>
 </p>
 
----
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b0d10,50:f59e0b,100:0b0d10&height=3" width="90%"/></p>
 
-### What I build
 - **Macropod**: macros and remapping for Windows
 - **Rubicon**: NxN Rubik's cube trainer in 3D
 - **Game mods**: Stationeers, Minecraft and more
 - **Home lab**: containers, monitoring, SSO, VPN
 
-### Tech stack
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b0d10,50:f59e0b,100:0b0d10&height=3" width="90%"/></p>
+
 <p align="center">
   <img src="https://skillicons.dev/icons?i=react,vite,nodejs,rust,tauri,electron,cs,powershell,docker,linux,git,vscode&theme=dark&perline=12" />
 </p>
@@ -71,7 +71,19 @@
 
 </details>
 
-### Stats
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b0d10,50:f59e0b,100:0b0d10&height=3" width="90%"/></p>
+
+<!-- Contribution graph (green squares, in orange) and contribution trend -->
+<p align="center">
+  <img src="https://ghchart.rshah.org/f59e0b/PantACRO4life" width="95%"/>
+</p>
+<p align="center">
+  <img src="profile-summary-card-output/tokyonight/0-profile-details.svg" width="95%"/>
+</p>
+<p align="center">
+  <img src="assets/languages.svg" width="95%"/>
+</p>
+
 <!-- Cards built daily by this repo's own workflow (no outside service to go down) -->
 <p align="center">
   <img height="170" src="profile-summary-card-output/tokyonight/3-stats.svg" />
@@ -83,7 +95,7 @@
   <img height="170" src="profile-summary-card-output/tokyonight/4-productive-time.svg" />
 </p>
 
-### My contributions, arcade style
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b0d10,50:f59e0b,100:0b0d10&height=3" width="90%"/></p>
 
 <!-- Breakout: the ball smashes the contribution squares -->
 <p align="center">
