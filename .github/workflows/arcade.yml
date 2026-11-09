@@ -35,7 +35,9 @@ jobs:
           GH_USER: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LANG_TOKEN: ${{ secrets.LANG_TOKEN }}
-        run: node .github/scripts/cards.mjs dist
+        run: |
+          sudo chown -R "$(id -u):$(id -g)" dist
+          node .github/scripts/cards.mjs dist
       - name: save in assets/
         run: |
           rm -rf assets profile-summary-card-output
