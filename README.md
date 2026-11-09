@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://pro.networkfixit.com"><img src="https://img.shields.io/badge/Portfolio-e01b31?style=for-the-badge&logo=googlechrome&logoColor=ffffff&labelColor=14171b"/></a>
-  <a href="https://networkfixit.com"><img src="https://img.shields.io/badge/Macropod-14171b?style=for-the-badge&logo=windows&logoColor=e01b31&labelColor=14171b"/></a>
+  <a href="https://networkfixit.com/products/macropod"><img src="https://img.shields.io/badge/Macropod-14171b?style=for-the-badge&logo=windows&logoColor=e01b31&labelColor=14171b"/></a>
   <a href="https://rubicon.networkfixit.com"><img src="https://img.shields.io/badge/Rubicon-14171b?style=for-the-badge&logo=threedotjs&logoColor=e01b31&labelColor=14171b"/></a>
 </p>
 
@@ -15,7 +15,7 @@
 
 <table align="center">
   <tr>
-    <td align="center" width="33%"><a href="https://networkfixit.com"><b>MACROPOD</b></a><br/><sub>Macros and remapping for Windows</sub></td>
+    <td align="center" width="33%"><a href="https://networkfixit.com/products/macropod"><b>MACROPOD</b></a><br/><sub>Macros and remapping for Windows</sub></td>
     <td align="center" width="33%"><a href="https://rubicon.networkfixit.com"><b>RUBICON</b></a><br/><sub>NxN Rubik's cube trainer in 3D</sub></td>
     <td align="center" width="33%"><b>GAME MODS</b><br/><sub>Stationeers, Minecraft and more</sub></td>
   </tr>
