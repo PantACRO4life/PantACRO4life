@@ -1,10 +1,8 @@
-name: arcade
-# Runs once a day, on every push to main, and on demand (Actions tab):
-# - draws the snake, Pac-Man and Breakout games from the contribution grid
-#   into assets/
-# - rebuilds the stats cards into profile-summary-card-output/
-# Everything is saved inside this repo, so the images also show while the
-# repo is private.
+name: profile images
+# Runs once a day, on every push to main, and on demand (Actions tab).
+# One job, one save: draws the Pac-Man, Breakout and snake games, then
+# .github/scripts/cards.mjs draws the RIS themed header, cards and dividers
+# and recolors the games red. Everything lands in assets/.
 on:
   schedule: [{ cron: "0 0 * * *" }]
   workflow_dispatch:
@@ -13,10 +11,10 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: arcade
+  group: profile-images
   cancel-in-progress: false
 jobs:
-  games:
+  draw:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -28,37 +26,24 @@ jobs:
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          outputs: dist/github-snake-dark.svg?palette=github-dark
-      - name: draw the most used languages card
+          outputs: dist/github-snake-dark.svg?color_snake=#e01b31&color_dots=#1f242b,#4a0d14,#7a1220,#b3172a,#ff2a3d&color_background=transparent
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: draw the RIS cards
         env:
           GH_USER: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LANG_TOKEN: ${{ secrets.LANG_TOKEN }}
-        run: node .github/scripts/languages.mjs dist/languages.svg
-      - name: save the games in assets/
+        run: node .github/scripts/cards.mjs dist
+      - name: save in assets/
         run: |
+          rm -rf assets profile-summary-card-output
           mkdir -p assets
           cp dist/*.svg assets/
           rm -rf dist
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets
-          git commit -m "chore: redraw arcade graphs" || echo "nothing changed"
+          git add -A assets profile-summary-card-output
+          git commit -m "chore: redraw profile images" || echo "nothing changed"
           git push
-
-  stats:
-    needs: games
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
-          BRANCH_NAME: main
-          TIME_ZONE: America/Toronto
-          THEME: tokyonight
-          ANIMATION: fade

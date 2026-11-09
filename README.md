@@ -1,27 +1,32 @@
-<!-- Animated wave header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b0d10,100:f59e0b&height=200&section=header&text=Hey,%20I'm%20Jay&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=IT%20specialist%20%E2%80%A2%20tool%20builder%20%E2%80%A2%20game%20modder&descAlignY=58&descSize=18" width="100%"/>
+<!-- RIS theme: red #e01b31 on #14171b. Images in assets/ are redrawn daily by .github/workflows/arcade.yml -->
+<p align="center"><img src="assets/header.svg" width="100%"/></p>
 
-<!-- Typing animation -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=F59E0B&center=true&vCenter=true&width=600&lines=Fixing+networks+by+day;Building+apps+by+night;Modding+games+on+weekends;Automating+everything+in+between" />
+  <img src="https://readme-typing-svg.demolab.com?font=Chakra+Petch&weight=700&size=24&duration=3000&pause=800&color=E01B31&center=true&vCenter=true&width=640&lines=Fixing+networks+by+day;Building+apps+by+night;Modding+games+on+weekends;Automating+everything+in+between" />
 </p>
 
-<!-- Badges -->
 <p align="center">
-  <a href="https://pro.networkfixit.com"><img src="https://img.shields.io/badge/Portfolio-f59e0b?style=for-the-badge&logo=googlechrome&logoColor=black"/></a>
-  <a href="https://networkfixit.com"><img src="https://img.shields.io/badge/Macropod-0b0d10?style=for-the-badge&logo=windows&logoColor=f59e0b"/></a>
-  <a href="https://rubicon.networkfixit.com"><img src="https://img.shields.io/badge/Rubicon-0b0d10?style=for-the-badge&logo=threedotjs&logoColor=f59e0b"/></a>
-  <img src="https://komarev.com/ghpvc/?username=PantACRO4life&style=for-the-badge&color=f59e0b&label=VISITORS"/>
+  <a href="https://pro.networkfixit.com"><img src="https://img.shields.io/badge/Portfolio-e01b31?style=for-the-badge&logo=googlechrome&logoColor=ffffff&labelColor=14171b"/></a>
+  <a href="https://networkfixit.com"><img src="https://img.shields.io/badge/Macropod-14171b?style=for-the-badge&logo=windows&logoColor=e01b31&labelColor=14171b"/></a>
+  <a href="https://rubicon.networkfixit.com"><img src="https://img.shields.io/badge/Rubicon-14171b?style=for-the-badge&logo=threedotjs&logoColor=e01b31&labelColor=14171b"/></a>
 </p>
 
-<p align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b0d10,50:f59e0b,100:0b0d10&height=3" width="90%"/></p>
+<p align="center"><img src="assets/divider.svg" width="100%"/></p>
 
-- **Macropod**: macros and remapping for Windows
-- **Rubicon**: NxN Rubik's cube trainer in 3D
-- **Game mods**: Stationeers, Minecraft and more
-- **Home lab**: containers, monitoring, SSO, VPN
+<table align="center">
+  <tr>
+    <td align="center" width="33%"><a href="https://networkfixit.com"><b>MACROPOD</b></a><br/><sub>Macros and remapping for Windows</sub></td>
+    <td align="center" width="33%"><a href="https://rubicon.networkfixit.com"><b>RUBICON</b></a><br/><sub>NxN Rubik's cube trainer in 3D</sub></td>
+    <td align="center" width="33%"><b>GAME MODS</b><br/><sub>Stationeers, Minecraft and more</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><b>HOME LAB</b><br/><sub>Containers, monitoring, SSO, VPN</sub></td>
+    <td align="center"><b>DESKTOP APPS</b><br/><sub>Tauri, Electron, Rust</sub></td>
+    <td align="center"><b>WEB</b><br/><sub>React sites and small backends</sub></td>
+  </tr>
+</table>
 
-<p align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b0d10,50:f59e0b,100:0b0d10&height=3" width="90%"/></p>
+<p align="center"><img src="assets/divider.svg" width="100%"/></p>
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=react,vite,nodejs,rust,tauri,electron,cs,powershell,docker,linux,git,vscode&theme=dark&perline=12" />
@@ -71,45 +76,17 @@
 
 </details>
 
-<p align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b0d10,50:f59e0b,100:0b0d10&height=3" width="90%"/></p>
+<p align="center"><img src="assets/divider.svg" width="100%"/></p>
 
-<!-- Contribution graph (green squares, in orange) and contribution trend -->
-<p align="center">
-  <img src="https://ghchart.rshah.org/f59e0b/PantACRO4life" width="95%"/>
-</p>
-<p align="center">
-  <img src="profile-summary-card-output/tokyonight/0-profile-details.svg" width="95%"/>
-</p>
-<p align="center">
-  <img src="assets/languages.svg" width="95%"/>
-</p>
+<p align="center"><img src="assets/stats.svg" width="100%"/></p>
+<p align="center"><img src="assets/contributions.svg" width="100%"/></p>
+<p align="center"><img src="assets/languages.svg" width="100%"/></p>
 
-<!-- Cards built daily by this repo's own workflow (no outside service to go down) -->
-<p align="center">
-  <img height="170" src="profile-summary-card-output/tokyonight/3-stats.svg" />
-  <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=PantACRO4life&theme=tokyonight&hide_border=true&background=0b0d10&ring=f59e0b&fire=f59e0b&currStreakLabel=f59e0b" />
-</p>
-<p align="center">
-  <img height="170" src="profile-summary-card-output/tokyonight/1-repos-per-language.svg" />
-  <img height="170" src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" />
-  <img height="170" src="profile-summary-card-output/tokyonight/4-productive-time.svg" />
-</p>
+<p align="center"><img src="assets/divider.svg" width="100%"/></p>
 
-<p align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b0d10,50:f59e0b,100:0b0d10&height=3" width="90%"/></p>
+<p align="center"><img src="assets/pacman-contribution-graph-dark.svg" width="100%"/></p>
+<p align="center"><img src="assets/breakout-contribution-graph-dark.svg" width="100%"/></p>
+<p align="center"><img src="assets/github-snake-dark.svg" width="100%"/></p>
 
-<!-- Breakout: the ball smashes the contribution squares -->
-<p align="center">
-  <img src="assets/breakout-contribution-graph-dark.svg" width="95%"/>
-</p>
-
-<!-- Pac-Man eating the contribution grid -->
-<p align="center">
-  <img src="assets/pacman-contribution-graph-dark.svg" width="95%"/>
-</p>
-
-<!-- Snake eating the contribution grid -->
-<p align="center">
-  <img src="assets/github-snake-dark.svg" width="95%"/>
-</p>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:f59e0b,100:0b0d10&height=120&section=footer" width="100%"/>
+<p align="center"><img src="assets/footer.svg" width="100%"/></p>
+<p align="center"><img src="https://komarev.com/ghpvc/?username=PantACRO4life&style=flat-square&color=e01b31&label=VISITORS"/></p>
