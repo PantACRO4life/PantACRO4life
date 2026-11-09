@@ -11,7 +11,6 @@ import { fileURLToPath } from 'node:url'
 const here = dirname(fileURLToPath(import.meta.url))
 const user = process.env.GH_USER
 const token = process.env.LANG_TOKEN || process.env.GITHUB_TOKEN
-const usePrivate = Boolean(process.env.LANG_TOKEN)
 const out = process.argv[2] || 'assets'
 const CW = 850 // every card is this wide
 mkdirSync(out, { recursive: true })
@@ -243,20 +242,12 @@ for (let i = days.length - 1; i >= 0; i--) {
 
 // ---------- languages.svg ----------
 {
-  const repos = []
-  for (let page = 1; ; page++) {
-    const url = usePrivate
-      ? `https://api.github.com/user/repos?affiliation=owner&per_page=100&page=${page}`
-      : `https://api.github.com/users/${user}/repos?type=owner&per_page=100&page=${page}`
-    const batch = await rest(url)
-    repos.push(...batch)
-    if (batch.length < 100) break
-  }
+  // Net lines per language from lines.mjs (vendor code and bulk imports skipped).
+  const lines = JSON.parse(readFileSync(join(out, "lines.json"), "utf8"))
   const totals = {}
-  for (const repo of repos) {
-    if (repo.fork || repo.archived) continue
-    const langs = await rest(repo.languages_url)
-    for (const [lang, bytes] of Object.entries(langs)) totals[lang] = (totals[lang] || 0) + bytes
+  for (const [lang, t] of Object.entries(lines.totals)) {
+    const net = t.added - t.deleted
+    if (net > 0) totals[lang] = net
   }
   // Linguist colors, near-black ones lifted so they show on dark.
   const COLORS = {
@@ -271,7 +262,7 @@ for (let i = days.length - 1; i >= 0; i--) {
   const color = (l) => COLORS[l] || '#8b949e'
   const sum = Object.values(totals).reduce((a, b) => a + b, 0) || 1
   const top = Object.entries(totals).sort((a, b) => b[1] - a[1]).slice(0, 6)
-  const size = (b) => b >= 1e6 ? `${(b / 1e6).toFixed(1)} MB` : `${Math.max(1, Math.round(b / 1e3))} KB`
+  const size = (n) => `+${fmt(n)} net lines`
   const W = CW, barX = 28, barW = W - 56, barY = 78
   let x = barX
   const segs = top.map(([l, b]) => {
@@ -289,7 +280,7 @@ for (let i = days.length - 1; i >= 0; i--) {
       <rect x="${ix}" y="${iy - 11}" width="12" height="12" rx="2" fill="${color(l)}"/>
       <text x="${ix + 22}" y="${iy}" font-size="17" fill="${C.text}" class="h">${esc(l)}</text>
       <text x="${ix + (W - 56) / 2 - 36}" y="${iy}" font-size="17" fill="${C.text}" class="h" text-anchor="end">${((b / sum) * 100).toFixed(1)}%</text>
-      <text x="${ix + 22}" y="${iy + 20}" font-size="13" fill="${C.dim}">${size(b)} of code</text>
+      <text x="${ix + 22}" y="${iy + 20}" font-size="13" fill="${C.dim}">${size(b)}</text>
     </g>`
   }).join('\n  ')
   const H = 128 + Math.ceil(top.length / 2) * 52 + 4
@@ -300,7 +291,7 @@ for (let i = days.length - 1; i >= 0; i--) {
     .bar { animation: grow 1.2s ease-out both; transform-origin: ${barX}px 0; }
     @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }`
   writeFileSync(`${out}/languages.svg`, card(W, H, 'Most used languages', body, style))
-  console.log(`languages: ${repos.length} repos, ${top.map(([l]) => l).join(', ')}`)
+  console.log(`languages: ${lines.repos} repos, ${top.map(([l]) => l).join(', ')}`)
 }
 
 // ---------- recolor the arcade graphs (GitHub green -> RIS red) ----------

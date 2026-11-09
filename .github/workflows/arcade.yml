@@ -37,6 +37,7 @@ jobs:
           LANG_TOKEN: ${{ secrets.LANG_TOKEN }}
         run: |
           sudo chown -R "$(id -u):$(id -g)" dist
+          node .github/scripts/lines.mjs dist
           node .github/scripts/cards.mjs dist
       - name: save in assets/
         run: |
