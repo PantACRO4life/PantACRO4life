@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="274" viewBox="0 0 800 274">
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .title { font-size: 22px; font-weight: 700; fill: #e6edf3; }
+    .name { font-size: 16px; fill: #e6edf3; }
+    .pct { font-size: 16px; fill: #e6edf3; }
+    .sub { font-size: 14px; fill: #8b949e; }
+    .bar { animation: grow 1.2s ease-out both; transform-origin: 40px 0; }
+    .item { animation: fade 0.6s ease-out both; }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  </style>
+  <text x="40" y="44" class="title">Most used languages</text>
+  <clipPath id="round"><rect x="40" y="70" width="720" height="8" rx="4"/></clipPath>
+  <g clip-path="url(#round)" class="bar"><rect x="40.0" y="70" width="175.3" height="8" fill="#555555"/><rect x="215.3" y="70" width="122.1" height="8" fill="#f1e05a"/><rect x="337.4" y="70" width="104.4" height="8" fill="#b07219"/><rect x="441.8" y="70" width="102.1" height="8" fill="#e34c26"/><rect x="543.9" y="70" width="83.3" height="8" fill="#663399"/><rect x="627.2" y="70" width="57.9" height="8" fill="#6b7cff"/><rect x="685.1" y="70" width="74.9" height="8" fill="#30363d"/></g>
+  <g class="item" style="animation-delay:0.00s">
+    <circle cx="46" cy="113" r="6" fill="#555555"/>
+    <text x="62" y="118" class="name">C</text>
+    <text x="370" y="118" class="pct" text-anchor="end">24.3%</text>
+    <text x="62" y="138" class="sub">271 KB of code</text>
+  </g>
+  <g class="item" style="animation-delay:0.12s">
+    <circle cx="416" cy="113" r="6" fill="#f1e05a"/>
+    <text x="432" y="118" class="name">JavaScript</text>
+    <text x="740" y="118" class="pct" text-anchor="end">17.0%</text>
+    <text x="432" y="138" class="sub">189 KB of code</text>
+  </g>
+  <g class="item" style="animation-delay:0.24s">
+    <circle cx="46" cy="165" r="6" fill="#b07219"/>
+    <text x="62" y="170" class="name">Java</text>
+    <text x="370" y="170" class="pct" text-anchor="end">14.5%</text>
+    <text x="62" y="190" class="sub">162 KB of code</text>
+  </g>
+  <g class="item" style="animation-delay:0.36s">
+    <circle cx="416" cy="165" r="6" fill="#e34c26"/>
+    <text x="432" y="170" class="name">HTML</text>
+    <text x="740" y="170" class="pct" text-anchor="end">14.2%</text>
+    <text x="432" y="190" class="sub">158 KB of code</text>
+  </g>
+  <g class="item" style="animation-delay:0.48s">
+    <circle cx="46" cy="217" r="6" fill="#663399"/>
+    <text x="62" y="222" class="name">CSS</text>
+    <text x="370" y="222" class="pct" text-anchor="end">11.6%</text>
+    <text x="62" y="242" class="sub">129 KB of code</text>
+  </g>
+  <g class="item" style="animation-delay:0.60s">
+    <circle cx="416" cy="217" r="6" fill="#6b7cff"/>
+    <text x="432" y="222" class="name">Lua</text>
+    <text x="740" y="222" class="pct" text-anchor="end">8.0%</text>
+    <text x="432" y="242" class="sub">90 KB of code</text>
+  </g>
+</svg>
