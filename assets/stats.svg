@@ -31,7 +31,7 @@
   <g class="fade" style="animation-delay:0.0s">
       <polygon points="28,86 34,86 30,122 24,122" fill="#e01b31"/>
       <text x="42" y="100" font-size="12" fill="#8d949e" class="h" letter-spacing="1">CONTRIBUTIONS / YEAR</text>
-      <text x="42" y="122" font-size="22" fill="#f2f4f7" class="h">1,411</text>
+      <text x="42" y="122" font-size="22" fill="#f2f4f7" class="h">1,446</text>
     </g>
   <g class="fade" style="animation-delay:0.1s">
       <polygon points="278,86 284,86 280,122 274,122" fill="#e01b31"/>
@@ -41,7 +41,7 @@
   <g class="fade" style="animation-delay:0.2s">
       <polygon points="28,136 34,136 30,172 24,172" fill="#e01b31"/>
       <text x="42" y="150" font-size="12" fill="#8d949e" class="h" letter-spacing="1">PULL REQUESTS</text>
-      <text x="42" y="172" font-size="22" fill="#f2f4f7" class="h">27</text>
+      <text x="42" y="172" font-size="22" fill="#f2f4f7" class="h">35</text>
     </g>
   <g class="fade" style="animation-delay:0.3s">
       <polygon points="278,136 284,136 280,172 274,172" fill="#e01b31"/>
@@ -62,7 +62,7 @@
   <circle cx="710" cy="130" r="56" fill="none" stroke="#e01b31" stroke-width="10" stroke-linecap="round"
     stroke-dasharray="351.9" stroke-dashoffset="351.9" transform="rotate(-90 710 130)" class="draw"/>
   <circle cx="710" cy="130" r="70" fill="none" stroke="#ff2a3d" stroke-width="2" class="pulse"/>
-  <text x="710" y="142" text-anchor="middle" font-size="40" fill="#f2f4f7" class="h">7</text>
+  <text x="710" y="142" text-anchor="middle" font-size="40" fill="#f2f4f7" class="h">8</text>
   <text x="710" y="222" text-anchor="middle" font-size="14" fill="#ff2a3d" class="h" letter-spacing="1">CURRENT STREAK</text>
   <text x="710" y="240" text-anchor="middle" font-size="12" fill="#8d949e">Longest: 9 days</text>
 </svg>
