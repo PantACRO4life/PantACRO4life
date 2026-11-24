@@ -27,41 +27,41 @@
   <rect x="28" y="54" width="150" height="3" rx="1.5" fill="url(#uline)"/>
   <line x1="760" y1="18" x2="774.4" y2="42" stroke="url(#streak)" stroke-width="2.8000000000000003" stroke-linecap="round" class="streak" style="animation-delay:0s"/><line x1="771.2" y1="18" x2="785.6" y2="42" stroke="url(#streak)" stroke-width="2.8000000000000003" stroke-linecap="round" class="streak" style="animation-delay:0.15s"/><line x1="782.4" y1="18" x2="796.8" y2="42" stroke="url(#streak)" stroke-width="2.8000000000000003" stroke-linecap="round" class="streak" style="animation-delay:0.3s"/>
   <clipPath id="round"><rect x="28" y="78" width="794" height="10" rx="5"/></clipPath>
-  <g clip-path="url(#round)" class="bar"><rect x="28.0" y="78" width="278.3" height="10" fill="#f1e05a"/><rect x="306.3" y="78" width="131.9" height="10" fill="#178600"/><rect x="438.2" y="78" width="128.9" height="10" fill="#3178c6"/><rect x="567.1" y="78" width="110.3" height="10" fill="#dea584"/><rect x="677.4" y="78" width="46.7" height="10" fill="#b07219"/><rect x="724.2" y="78" width="46.1" height="10" fill="#5391FE"/><rect x="770.2" y="78" width="51.8" height="10" fill="#2a2f37"/></g>
+  <g clip-path="url(#round)" class="bar"><rect x="28.0" y="78" width="319.1" height="10" fill="#3572A5"/><rect x="347.1" y="78" width="131.5" height="10" fill="#dea584"/><rect x="478.7" y="78" width="106.6" height="10" fill="#f1e05a"/><rect x="585.3" y="78" width="70.6" height="10" fill="#f34b7d"/><rect x="655.8" y="78" width="59.9" height="10" fill="#178600"/><rect x="715.7" y="78" width="49.0" height="10" fill="#3178c6"/><rect x="764.6" y="78" width="57.4" height="10" fill="#2a2f37"/></g>
   <g class="fade" style="animation-delay:0.60s">
-      <rect x="28" y="117" width="12" height="12" rx="2" fill="#f1e05a"/>
-      <text x="50" y="128" font-size="17" fill="#f2f4f7" class="h">JavaScript</text>
-      <text x="389" y="128" font-size="17" fill="#f2f4f7" class="h" text-anchor="end">35.1%</text>
-      <text x="50" y="148" font-size="13" fill="#8d949e">+202,045 net lines</text>
+      <rect x="28" y="117" width="12" height="12" rx="2" fill="#3572A5"/>
+      <text x="50" y="128" font-size="17" fill="#f2f4f7" class="h">Python</text>
+      <text x="389" y="128" font-size="17" fill="#f2f4f7" class="h" text-anchor="end">40.2%</text>
+      <text x="50" y="148" font-size="13" fill="#8d949e">+610,085 net lines</text>
     </g>
   <g class="fade" style="animation-delay:0.72s">
-      <rect x="439" y="117" width="12" height="12" rx="2" fill="#178600"/>
-      <text x="461" y="128" font-size="17" fill="#f2f4f7" class="h">C#</text>
+      <rect x="439" y="117" width="12" height="12" rx="2" fill="#dea584"/>
+      <text x="461" y="128" font-size="17" fill="#f2f4f7" class="h">Rust</text>
       <text x="800" y="128" font-size="17" fill="#f2f4f7" class="h" text-anchor="end">16.6%</text>
-      <text x="461" y="148" font-size="13" fill="#8d949e">+95,757 net lines</text>
+      <text x="461" y="148" font-size="13" fill="#8d949e">+251,467 net lines</text>
     </g>
   <g class="fade" style="animation-delay:0.84s">
-      <rect x="28" y="169" width="12" height="12" rx="2" fill="#3178c6"/>
-      <text x="50" y="180" font-size="17" fill="#f2f4f7" class="h">TypeScript</text>
-      <text x="389" y="180" font-size="17" fill="#f2f4f7" class="h" text-anchor="end">16.2%</text>
-      <text x="50" y="200" font-size="13" fill="#8d949e">+93,580 net lines</text>
+      <rect x="28" y="169" width="12" height="12" rx="2" fill="#f1e05a"/>
+      <text x="50" y="180" font-size="17" fill="#f2f4f7" class="h">JavaScript</text>
+      <text x="389" y="180" font-size="17" fill="#f2f4f7" class="h" text-anchor="end">13.4%</text>
+      <text x="50" y="200" font-size="13" fill="#8d949e">+203,775 net lines</text>
     </g>
   <g class="fade" style="animation-delay:0.96s">
-      <rect x="439" y="169" width="12" height="12" rx="2" fill="#dea584"/>
-      <text x="461" y="180" font-size="17" fill="#f2f4f7" class="h">Rust</text>
-      <text x="800" y="180" font-size="17" fill="#f2f4f7" class="h" text-anchor="end">13.9%</text>
-      <text x="461" y="200" font-size="13" fill="#8d949e">+80,081 net lines</text>
+      <rect x="439" y="169" width="12" height="12" rx="2" fill="#f34b7d"/>
+      <text x="461" y="180" font-size="17" fill="#f2f4f7" class="h">C++</text>
+      <text x="800" y="180" font-size="17" fill="#f2f4f7" class="h" text-anchor="end">8.9%</text>
+      <text x="461" y="200" font-size="13" fill="#8d949e">+134,934 net lines</text>
     </g>
   <g class="fade" style="animation-delay:1.08s">
-      <rect x="28" y="221" width="12" height="12" rx="2" fill="#b07219"/>
-      <text x="50" y="232" font-size="17" fill="#f2f4f7" class="h">Java</text>
-      <text x="389" y="232" font-size="17" fill="#f2f4f7" class="h" text-anchor="end">5.9%</text>
-      <text x="50" y="252" font-size="13" fill="#8d949e">+33,919 net lines</text>
+      <rect x="28" y="221" width="12" height="12" rx="2" fill="#178600"/>
+      <text x="50" y="232" font-size="17" fill="#f2f4f7" class="h">C#</text>
+      <text x="389" y="232" font-size="17" fill="#f2f4f7" class="h" text-anchor="end">7.5%</text>
+      <text x="50" y="252" font-size="13" fill="#8d949e">+114,420 net lines</text>
     </g>
   <g class="fade" style="animation-delay:1.20s">
-      <rect x="439" y="221" width="12" height="12" rx="2" fill="#5391FE"/>
-      <text x="461" y="232" font-size="17" fill="#f2f4f7" class="h">PowerShell</text>
-      <text x="800" y="232" font-size="17" fill="#f2f4f7" class="h" text-anchor="end">5.8%</text>
-      <text x="461" y="252" font-size="13" fill="#8d949e">+33,444 net lines</text>
+      <rect x="439" y="221" width="12" height="12" rx="2" fill="#3178c6"/>
+      <text x="461" y="232" font-size="17" fill="#f2f4f7" class="h">TypeScript</text>
+      <text x="800" y="232" font-size="17" fill="#f2f4f7" class="h" text-anchor="end">6.2%</text>
+      <text x="461" y="252" font-size="13" fill="#8d949e">+93,580 net lines</text>
     </g>
 </svg>
